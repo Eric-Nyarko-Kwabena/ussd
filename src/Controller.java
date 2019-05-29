@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -7,10 +5,12 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 
 import java.io.IOException;
@@ -196,11 +196,7 @@ public class Controller {
         buttonSend.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                try {
-                    Parent optionTwo = FXMLLoader.load(getClass().getResource("optionselection.fxml"));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+           displayInput.clear();
 
 
             }
@@ -254,5 +250,6 @@ public class Controller {
         displayInput.setText(ev.getSource().toString());
 
     }
+
 
 }

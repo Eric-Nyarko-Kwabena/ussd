@@ -12,7 +12,7 @@
 
 <?import javafx.scene.control.TextArea?>
 <AnchorPane
-        fx:controller="sample.Controller"
+        fx:controller="Main"
         xmlns:fx="http://javafx.com/fxml"
         maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="350.0" style="-fx-background-color: #20120F;" >
    <children>
@@ -45,8 +45,8 @@
             <Button onAction="#buttonActionHash"  fx:id="buttonHash" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="#" GridPane.columnIndex="2" GridPane.rowIndex="4" />
 
 
-             <Button onAction="#buttonActions" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Send" textFill="#098fee" />
-            <Button onAction="#buttonActionDelete" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Delete" GridPane.columnIndex="1">
+             <Button onAction="#buttonActionSend" fx:id="buttonSend" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Send" textFill="#098fee" />
+            <Button  onAction="#buttonActionDelete"  fx:id="buttonDelete" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Delete" GridPane.columnIndex="1">
                <textFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>
@@ -57,16 +57,7 @@
                </textFill>
             </Button>
             <Button onAction="#buttonActionCancel" fx:id="buttonCancel" cancelButton="true" mnemonicParsing="false" prefHeight="63.0" prefWidth="96.0" text="Cancel" textFill="#d1150f" GridPane.columnIndex="2" />
-            <Button layoutX="86.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" text="Send">
-               <textFill>
-                  <RadialGradient centerX="0.9" centerY="0.5" radius="0.5">
-                     <stops>
-                        <Stop color="#308f11" />
-                        <Stop color="#09dbee" offset="1.0" />
-                     </stops>
-                  </RadialGradient>
-               </textFill>
-            </Button>
+
          </children>
       </GridPane>
       <TextArea

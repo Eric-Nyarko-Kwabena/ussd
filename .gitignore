@@ -2,3 +2,6 @@ build
 dist
 test
 nbproject
+out
+.idea
+ussdProject.iml
